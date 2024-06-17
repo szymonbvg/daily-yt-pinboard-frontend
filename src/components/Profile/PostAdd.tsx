@@ -40,7 +40,7 @@ export default function PostAdd({ posts }: PostAddProps) {
 
       axios
         .post(
-          "http://localhost:3000/v1/post/add",
+          `${import.meta.env.VITE_API_URL}/v1/post/add`,
           { heading: getHeading(), url: url.current.value },
           { headers: { "Content-Type": "application/json", "X-Auth-Token": token } }
         )
