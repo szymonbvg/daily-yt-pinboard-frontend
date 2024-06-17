@@ -1,0 +1,26 @@
+.hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+	padding: 6px 16px 6px 16px;
+}
+
+.hamburger-menu .line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	padding: 3px;
+}
+
+.hamburger-menu span {
+	background-color: white;
+	width: 2rem;
+	height: 3px;
+	border: 0px transparent solid;
+	border-radius: 10px;
+}

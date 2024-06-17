@@ -1,0 +1,10 @@
+.posts {
+	display: grid;
+	justify-content: left;
+	grid-template-rows: repeat(2, auto);
+	grid-auto-columns: auto;
+  grid-auto-flow: column;
+	overflow-x: auto;
+  white-space: nowrap;
+	height: 100%;
+}

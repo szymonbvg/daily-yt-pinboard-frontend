@@ -1,0 +1,39 @@
+body {
+	background-color: #151718;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	color: whitesmoke;
+	font-weight: bolder;
+	font-family: 'Consolas';
+}
+
+@font-face {
+	font-family: 'Consolas';
+	src: url('/CONSOLA.TTF');
+}
+
+button {
+	color: whitesmoke;
+	background-color: #6a6a6a;
+	border: 0;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	padding: 0 10px 0 10px;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	border-radius: 0;
+	background-color: #4A5053;
+	color: whitesmoke;
+}
+
+p, a {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}

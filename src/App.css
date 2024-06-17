@@ -1,0 +1,13 @@
+#root {
+	display: flex;
+	flex-direction: column;
+	background-color: #151718;
+	height: 100%;
+}
+
+.content {
+	padding-top: 3.5rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}

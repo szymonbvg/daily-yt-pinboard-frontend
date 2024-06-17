@@ -1,0 +1,35 @@
+.input-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	margin-top: 25vh;
+	gap: 1px;
+}
+
+.input-form .input-item {
+	display: flex;
+	height: 3rem;
+	width: 60%;
+	max-width: 50rem;
+}
+
+.input-form button {
+	height: 3rem;
+	width: 60%;
+	max-width: 50rem;
+}
+
+.input-form .message {
+	text-align: center;
+	width: 60%;
+	max-width: 50rem;
+	height: auto;
+	word-wrap: break-word;
+}
+
+.g-recaptcha {
+	height: auto;
+	width: auto;
+}

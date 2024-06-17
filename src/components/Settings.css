@@ -1,0 +1,54 @@
+.settings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 16vh;
+}
+
+.settings .elements {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 50rem;
+}
+
+.settings p {
+	width: auto;
+	height: auto;
+	padding: 4px 0px;
+}
+
+.settings button {
+	height: 3.5rem;
+	width: auto;
+}
+
+.settings .profile-link {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	margin-top: 40px;
+}
+
+.settings a {
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+
+.settings input {
+	width: auto;
+	height: 3.5rem;
+}
+
+.settings #logout {
+	margin-top: 40px;
+}
+
+.settings .message {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	text-align: center;
+	margin-top: 0;
+}

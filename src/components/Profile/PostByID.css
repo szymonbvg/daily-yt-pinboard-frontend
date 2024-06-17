@@ -1,0 +1,12 @@
+.specific-post {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.specific-post a {
+	width: auto;
+	height: auto;
+}
