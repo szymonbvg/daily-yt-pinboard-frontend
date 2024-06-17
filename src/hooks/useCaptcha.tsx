@@ -13,7 +13,7 @@ export function useCaptcha(siteKey: string): CaptchaHook {
   useEffect(() => {
     setRendered(false);
     const script = document.createElement("script");
-    script.src = "https://www.google.com/recaptcha/api.js";
+    script.src = "https://www.google.com/recaptcha/api.js?hl=en";
     script.async = true;
 
     document.body.appendChild(script);
