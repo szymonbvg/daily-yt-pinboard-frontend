@@ -21,6 +21,7 @@ export enum MessageType {
   SAVED = "saved",
   LOADING = "Loading...",
   NOT_FOUND = "Not Found",
+  NO_RESULTS = "No more results",
 }
 
 export interface IMessageProps extends Partial<AuthFuncProps> {

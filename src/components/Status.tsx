@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { MessageType } from "../structures/Common";
 
 type StatusProps = {
-  type: MessageType.LOADING | MessageType.NOT_FOUND;
+  type: MessageType.LOADING | MessageType.NOT_FOUND | MessageType.NO_RESULTS;
 };
 
 export default function Status(props: StatusProps) {

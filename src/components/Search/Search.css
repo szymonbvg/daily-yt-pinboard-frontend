@@ -33,7 +33,7 @@
 	width: 100%;
 }
 
-.search-results .result {
+.search-results .result, .more {
 	display: flex;
 	justify-content: center;
 	height: auto;
@@ -42,13 +42,20 @@
 	padding: 6px 16px;
 }
 
-.result .profile {
+.result .profile, #more-btn {
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	padding: 0 1.5rem;
 	background: #0A0A0A;
 	border-radius: 16px;
+}
+
+#more-btn {
+	justify-content: center;
+	align-items: center;
+	height: 4.5rem;
+	background-color: #6a6a6a;
 }
 
 .profile .text {
