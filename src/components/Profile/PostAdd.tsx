@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useRef, useState } from "react";
-import { PostFormat } from "../../types/Profile";
 import Message from "../Message";
 import { getHeading } from "../../util/Heading";
 import "./Post.css";
@@ -11,28 +10,14 @@ type PostResponse = {
   message?: string;
 };
 
-type PostAddProps = {
-  posts: PostFormat[];
-};
-
-export default function PostAdd({ posts }: PostAddProps) {
+export default function PostAdd() {
   const url = useRef<HTMLInputElement | null>(null);
   const token = localStorage.getItem("token");
   const [response, setResponse] = useState<PostResponse>({ status: null });
 
-  const checkDate = () => {
-    const date = new Date();
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();
-    const parsed = day + "-" + month + "-" + year;
-
-    return !posts.some((i) => i.date === parsed);
-  };
-
   const addPost = () => {
     if (url.current?.value && !response.status) {
-      const message = getMessage({ url: url.current.value, dateCallback: checkDate });
+      const message = getMessage({ url: url.current.value });
       if (message) {
         setResponse({ status: false, message: message });
         return;

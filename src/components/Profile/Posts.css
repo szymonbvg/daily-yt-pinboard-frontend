@@ -8,3 +8,29 @@
   white-space: nowrap;
 	height: 100%;
 }
+
+.posts .more-posts, #more-posts-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	margin: 16px;
+	border-radius: 16px;
+}
+
+.posts .more-posts {
+	height: calc((100vh - 3.5rem) / 2.3);
+	width: calc((100vh - 3.5rem) / 2.3);
+}
+
+.posts #more-posts-btn {
+	height: calc((100vh - 3.5rem) / 6);
+	width: calc((100vh - 3.5rem) / 2.3);
+	text-wrap: wrap;
+	transition: 300ms;
+	box-shadow: 7px 5px 10px #121212;
+}
+
+.posts #more-posts-btn:hover {
+	box-shadow: 12px 10px 15px #0f0f0f;
+}

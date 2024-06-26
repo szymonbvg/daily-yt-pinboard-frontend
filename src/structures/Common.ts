@@ -13,7 +13,6 @@ export enum MessageType {
   SPACES_IN_URL = "URL cannot contain spaces",
   URL_TOO_LONG = "URL too long",
   INVALID_URL = "invalid URL",
-  POST_LIMIT = "one post per day!",
   PASSWD_TOO_SHORT = "min password lenght: 8",
   CAPTCHA = "confirm that you're not a bot",
   HEADING_TOO_LONG = "heading too long",
@@ -46,7 +45,6 @@ export const Messages: {
   { condition: (props: IMessageProps) => props.url?.includes(" "), value: MessageType.SPACES_IN_URL },
   { condition: (props: IMessageProps) => props.url && props.url.length > 2000, value: MessageType.URL_TOO_LONG },
   { condition: (props: IMessageProps) => props.url && !RegExp.URL.test(props.url), value: MessageType.INVALID_URL },
-  { condition: (props: IMessageProps) => props.dateCallback?.() === false, value: MessageType.POST_LIMIT },
 ];
 
 export function getMessage(props: IMessageProps) {

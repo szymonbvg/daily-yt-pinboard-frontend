@@ -4,4 +4,5 @@ export type ProfileResponse = {
   status: boolean | null;
   authenticated?: boolean;
   content: PostFormat[];
+  lenght?: number
 };
